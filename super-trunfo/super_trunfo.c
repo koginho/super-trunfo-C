@@ -18,7 +18,7 @@ int main() { // Começo da execução.
     fgets(cidadeNome, 40, stdin); // Entrada de dado para cidade.
 
     printf("Digite o código da carta: ");
-    scanf("%s", &cartaCodigo);
+    scanf("%s", &cartaCodigo); // Entrada de dado para código da carta.
 
     printf("População: ");
     scanf("%d", &populacao); // Entrada de dado para população.
@@ -38,11 +38,10 @@ int main() { // Começo da execução.
 
     // Calculando PIB per capita e Densidade Populacional
     float pibPerCapita = (pib / populacao);
-    float pibPerCapita_2 = (pib_2 / populacao_2);
     float densidadePopulacional = (populacao / areaEmKM);
-    float densidadePopulacional_2 = (populacao_2 / areaEmKM_2);
 
-    // Primeira impressão de dados.
+
+    // Primeira impressão de dados, exibe informações da carta 1.
     printf("Informações da carta número 1:\n");
     printf("Estado: %s - Cidade: %s\n", estado, cidadeNome);
     printf("Código: %s - População: %d\n", cartaCodigo, populacao);
@@ -65,7 +64,7 @@ int main() { // Começo da execução.
     fgets(cidadeNome_2, 40, stdin); // Entrada de dado para cidade.
 
     printf("Digite o código da carta: ");
-    scanf("%s", &cartaCodigo_2);
+    scanf("%s", &cartaCodigo_2); // Entrada de dados para código da carta.
 
     printf("População: ");
     scanf("%d", &populacao_2); // Entrada de dado para população.
@@ -84,10 +83,10 @@ int main() { // Começo da execução.
     cidadeNome_2[strcspn(cidadeNome_2, "\n")] = 0;
 
     // Calculando PIB per capita e Densidade Populacional da segunda carta.
-    float densidadePopulacional = (populacao / areaEmKM);
+    float pibPerCapita_2 = (pib_2 / populacao_2);
     float densidadePopulacional_2 = (populacao_2 / areaEmKM_2);
 
-    // Segunda impressão de dados.
+    // Segunda impressão de dados, exibe informações da carta 2.
     printf("Informações da carta número 2:\n");
     printf("Estado: %s - Cidade: %s\n", estado_2, cidadeNome_2);
     printf("Código: %s - População: %d\n", cartaCodigo_2, populacao_2);
@@ -101,9 +100,16 @@ int main() { // Começo da execução.
     getchar(); // getchar para ler a entrada padrão.
     getchar(); // usado duas vezes para descartar o dado recebido.
 
+    // Estrutura de decisão para verificar qual das duas cartas possue mais pontos turisticos.
     if(pontosTuristicos > pontosTuristicos_2) {
-        printf("A Carta %s é a vencedora.\n", cartaCodigo);
+        // Bloco de código caso carta 1 seja maior que carta 2
+        printf("Carta 1: %s: %i.\n", cidadeNome, pontosTuristicos);
+        printf("Carta 2: %s: %i.\n", cidadeNome_2, pontosTuristicos_2);
+        printf("Resultado: A Carta 1 (%s) é a vencedora.\n", cidadeNome);
     } else {
+        // Bloco de código caso carta 2 seja maior que carta 1
+        printf("Carta 1- %s: %i.\n", cidadeNome, pontosTuristicos);
+        printf("Carta 2- %s: %i.\n", cidadeNome_2, pontosTuristicos_2);
         printf("A Carta %s é a vencedora.\n", cartaCodigo_2);
     }
 
