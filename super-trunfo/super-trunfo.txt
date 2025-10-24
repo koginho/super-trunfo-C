@@ -1,0 +1,36 @@
+   ,-,--.                  _ __       ,----.                                 
+ ,-.'-  _\ .--.-. .-.-. .-`.' ,`.  ,-.--` , \  .-.,.---.                     
+/==/_ ,_.'/==/ -|/=/  |/==/, -   \|==|-  _.-` /==/  `   \                    
+\==\  \   |==| ,||=| -|==| _ .=. ||==|   `.-.|==|-, .=., |                   
+ \==\ -\  |==|- | =/  |==| , '=',/==/_ ,    /|==|   '='  /                   
+ _\==\ ,\ |==|,  \/ - |==|-  '..'|==|    .-' |==|- ,   .'                    
+/==/\/ _ ||==|-   ,   /==|,  |   |==|_  ,`-._|==|_  . ,'.                    
+\==\ - , //==/ , _  .'/==/ - |   /==/ ,     //==/  /\ ,  )                   
+ `--`---' `--`..---'  `--`---'   `--`-----`` `--`-`--`--'                    
+ ,--.--------.                         .-._           _,---.     _,.---._    
+/==/,  -   , -\.-.,.---.  .--.-. .-.-./==/ \  .-._ .-`.' ,  \  ,-.' , -  `.  
+\==\.-.  - ,-./==/  `   \/==/ -|/=/  ||==|, \/ /, /==/_  _.-' /==/_,  ,  - \ 
+ `--`\==\- \ |==|-, .=., |==| ,||=| -||==|-  \|  /==/-  '..-.|==|   .=.     |
+      \==\_ \|==|   '='  /==|- | =/  ||==| ,  | -|==|_ ,    /|==|_ : ;=:  - |
+      |==|- ||==|- ,   .'|==|,  \/ - ||==| -   _ |==|   .--' |==| , '='     |
+      |==|, ||==|_  . ,'.|==|-   ,   /|==|  /\ , |==|-  |     \==\ -    ,_ / 
+      /==/ -//==/  /\ ,  )==/ , _  .' /==/, | |- /==/   \      '.='. -   .'  
+      `--`--``--`-`--`--'`--`..---'   `--`./  `--`--`---'        `--`--''    
+
+O que o programa deve fazer:
+
+-Permitir que o usuario faça a escolha das cartas.
+
+-Comparação com múltiplos atributos: usuario devera escolher dois atributos, que devem ser somados. A carta 
+com maiores atributos vence, com a exeção de desidade demográfica, onde a carta com menor valor vence.
+
+-Tratamento de empates: o programa deve identificar empates e notificar o jogador.
+
+-Menus dinamicos: devem ser interativos e bem explicativos.
+
+-Exibição clara do resultado: 
+1. O nome dos dois países.
+2. Os dois atributos usados na comparação.
+3. Os valores de cada atributo para cada carta.
+4. A soma dos atributos para cada carta.
+5. Qual carta venceu (ou se houve empate).

@@ -42,6 +42,7 @@ int main() { // Começo da execução.
 
 
     // Primeira impressão de dados, exibe informações da carta 1.
+
     printf("Informações da carta número 1:\n");
     printf("Estado: %s - Cidade: %s\n", estado, cidadeNome);
     printf("Código: %s - População: %d\n", cartaCodigo, populacao);
