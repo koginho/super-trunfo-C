@@ -200,7 +200,7 @@ int main()
                 break;
             case 2:
                 player_1_att_1 = pib_2;
-                printf("-= O PIB da primeira carta é: %.2.3f\n", pib_2);
+                printf("-= O PIB da primeira carta é: %.2f\n", pib_2);
                 break;
             default:
                 break;
@@ -210,11 +210,11 @@ int main()
             {
             case 1:
                 player_2_att_1 = pib;
-                printf("-= O PIB da segunda carta é: %.2.3f\n", pib);
+                printf("-= O PIB da segunda carta é: %.2f\n", pib);
                 break;
             case 2:
                 player_2_att_1 = pib_2;
-                printf("-= O PIB da segunda carta é: %.2.3f\n", pib_2);
+                printf("-= O PIB da segunda carta é: %.2f\n", pib_2);
                 break;
             default:
                 break;
